@@ -4,11 +4,11 @@ Fine-tune the pretrained CNN models (AlexNet, VGG, ResNet) followed by LSTM. Thi
 ### Training:
 
 - Download the Helicopter Marshalling Dataset: https://drive.google.com/file/d/1xwwt461qCQ5WQiHve97QghfwfdO6aW-U/view?usp=sharing
-- Put the dataset under the '/data' folder
+- Put the dataset under the `/data` folder
 - Run the training code and specify the path to the data folder
-'''
+```
 python basic_lstm.py ../data
-'''
+```
 
 
 ### Testing:
