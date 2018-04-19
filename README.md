@@ -1,6 +1,5 @@
-# Gesture Controlled Drone
-CNN + LSTM action recognition network
-Fine-tune the pretrained CNN models (AlexNet, VGG, ResNet) followed by LSTM
+# Gesture Action Recognition
+Fine-tune the pretrained CNN models (AlexNet, VGG, ResNet) followed by LSTM. This network is applied on gesture controlled drone. 
 
 ### Training:
 
@@ -25,3 +24,4 @@ python lstm_test.py ../weights/model_best_865.pth.tar
 - Opencv-3.3.1
 - PIL-5.0.0
 - Numpy-1.13.1
+
