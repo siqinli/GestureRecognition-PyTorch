@@ -25,4 +25,3 @@ python lstm_test.py ../weights/model_best_865.pth.tar
 - Opencv-3.3.1
 - PIL-5.0.0
 - Numpy-1.13.1
-
