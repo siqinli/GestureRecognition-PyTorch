@@ -83,8 +83,16 @@ class CLMarshallingDataset(Dataset):
 		file_list = sorted(os.listdir(file_path))
 		# print file_list
 		flow_list = sorted(os.listdir(flow_path))
+		# v: maximum translation in every step
+		v = 2
+		offset = 0
 		for i, f in enumerate(file_list):
 			frame = Image.open(file_path + '/' + f)
+			#translation
+			offset += random.randrange(-v, v)
+			offset = min(offset, 3 * v)
+			offset = max(offset, -3 * v)
+			frame = frame.transform(frame.size, Image.AFFINE, (1, 0, offset, 0, 1, 0))
 			if self.transform is not None:
 				frame = self.transform[0](frame)
 			frames.append(frame)
